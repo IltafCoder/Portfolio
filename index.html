@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <label>Porfolio</label>
+            <div id="old-nav">
+                <a href="#home" class="smooth-scroll" id="home-tab">Home</a>
+                <a href="#services" class="smooth-scroll" id="services-tab">Services</a>
+                <a href="#skills" class="smooth-scroll" id="skills-tab">Skills</a>
+                <a href="#about" class="smooth-scroll" id="about-tab">About</a>
+                <a href="#contact" class="smooth-scroll" id="contact-tab">Contact</a>
+                <a href="#theme" onclick="changeTheme()"><i class="fas fa-moon" class="theme-button"></i></a>
+            </div>
+            <button id="three-bars" onclick="showMenuBar()" onblur="hideMenuBar()"><i class="fa fa-bars"></i></button>
+            <div id="new-nav">
+                <a href="#home" class="smooth-scroll" id="home-tab">Home</a>
+                <a href="#services" class="smooth-scroll" id="services-tab">Services</a>
+                <a href="#skills" class="smooth-scroll" id="skills-tab">Skills</a>
+                <a href="#about" class="smooth-scroll" id="about-tab">About</a>
+                <a href="#contact" class="smooth-scroll" id="contact-tab">Contact</a>
+                <a href="#theme" onclick="changeTheme()"><i class="fas fa-moon" class="theme-button"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home parallax" id="home">
+        <div class="my-info">
+            <h1>Hi, I'm Iltaf Khan</h1>
+            <h2>A <span class="auto-type"></span></h2>
+            <p>Welcome to my portfolio, where I showcase a collection of innovative projects and cutting-edge
+                solutions. With a strong foundation in coding and a passion for pushing boundaries, I strive to create
+                extraordinary digital experiences. Explore my work and let's connect to collaborate on transforming
+                ideas into reality. Together, we can make a lasting impact in the world of technology.</p>
+            <div class="home-btns">
+                <button class="solid-btn">Contact Me</button>
+                <button class="hollow-btn">Download CV</button>
+            </div>
+        </div>
+        <div class="my-pic">
+            <div id="my-pic-circle">
+
+            </div>
+            <img src="mypic.jpg" id="my-pic-real">
+            <div class="contact-icon-holder">
+                <button class="contact-icons"><i class="fa fa-instagram"></i></button>
+                <button class="contact-icons"><i class="fa fa-twitter"></i></button>
+                <button class="contact-icons"><i class="fa fa-linkedin"></i></button>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="services parallax" id="services">
+        <label>My Services</label>
+        <div>
+            <div id="service-1">
+                <label>Web Development</label>
+                <p>I am a professional web developer, specializing in providing top-notch web development services. With
+                    a deep understanding of HTML, CSS, and JavaScript, I possess the skills to create visually stunning
+                    and highly functional websites. From responsive design to seamless user experience, I ensure that
+                    every website I develop reflects the unique needs and goals of my clients. By leveraging the latest
+                    web technologies and frameworks, I build robust and scalable web applications that deliver
+                    outstanding performance. My commitment to clean and maintainable code.</p>
+                    <button class="solid-btn" style="width: 150px; height: 30px;">Read more</button>
+            </div>
+            <div id="service-2">
+                <label>Mobile App Development</label>
+                <p>I am a skilled mobile app developer, specializing in creating exceptional mobile experiences. With
+                    expertise in iOS and Android development, I craft innovative and user-friendly applications. Using
+                    languages like Swift and Kotlin, I build robust and scalable code to ensure optimal performance and
+                    efficiency. From concept to deployment, I work closely with clients to understand their unique
+                    requirements and create custom mobile solutions that align with their goals. Whether it's developing
+                    native apps or cross-platform solutions, I am committed to delivering high-quality mobile
+                    experiences that engage and delight users.</p>
+                    <button class="solid-btn" style="width: 150px; height: 30px;">Read more</button>
+
+            </div>
+            <div id="service-3">
+                <label>Data Analysis</label>
+                <p>I possess a strong analytical mindset and expertise in extracting meaningful insights from complex
+                    data sets. Utilizing tools such as Python and R, I have the skills to clean, analyze, and visualize
+                    data effectively. From conducting exploratory data analysis to implementing statistical models, I
+                    have a deep understanding of data manipulation, data mining, and predictive analytics. With a keen
+                    eye for detail and a passion for problem-solving, I can uncover patterns, trends, and correlations
+                    to support data-driven decision-making. Whether it's identifying business opportunities, optimizing
+                    processes, or improving performance.</p>
+                    <button class="solid-btn" style="width: 150px; height: 30px;">Read more</button>
+            </div>
+        </div>
+        <div class="read-more-btns">
+            
+            
+            
+        </div>
+    </section>
+    <section class="skills parallax" id="skills">
+        <label>My Skills</label>
+        <div>
+            <div id="skill-1">
+                <label>Web Development</label>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>BootStrap</li>
+                    <li>Responsive Web Design</li>
+                    <li>Web Accessibility</li>
+                    <li>Web Hosting and Deployment</li>
+                    <li>Search Engine Optimization</li>
+                </ul>
+            </div>
+            <div id="skill-2">
+                <label>Mobile App Development</label>
+                <ul>
+                    <li>Kotlin</li>
+                    <li>Java</li>
+                    <li>Swift</li>
+                    <li>React</li>
+                    <li>Data Encryption</li>
+                    <li>Material Design</li>
+                    <li>Manual Testing</li>
+                    <li>Flutter</li>
+                    <li>OneSignal</li>
+                </ul>
+
+            </div>
+            <div id="skill-3">
+                <label>Data Analysis</label>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Data Manipulation</li>
+                    <li>Data Visualization</li>
+                    <li>Machine Learning</li>
+                    <li>Statistical Analysis</li>
+                    <li>Data Analysis</li>
+                    <li>Database Management</li>
+                    <li>Data Storytelling</li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="about parallax" id="about">
+        <img src="mypic-nobg.png">
+        <div>
+            <label>About Me</label>
+            <div>
+                <p>Allow me to introduce myself. I am Iltaf Khan, a skilled professional with a diverse background in
+                    web
+                    development, data analysis, and mobile app development. With expertise in HTML, CSS, and JavaScript,
+                    I have
+                    crafted visually stunning and user-friendly websites that provide exceptional user experiences. In
+                    addition
+                    to my web development skills, I have a strong foundation in data analysis, leveraging tools like
+                    Python and
+                    R to extract valuable insights from complex datasets. I am well-versed in statistical analysis, data
+                    visualization, and machine learning techniques, allowing me to uncover patterns and drive
+                    data-driven
+                    decision-making. Furthermore, I possess a passion for mobile app development, specializing in iOS
+                    and
+                    Android platforms. Using languages like Swift and Kotlin, I have created mobile applications that
+                    combine
+                    seamless functionality with an intuitive user interface. With my versatile skill set and commitment
+                    to
+                    delivering high-quality solutions, I am dedicated to bringing your projects to life across various
+                    domains.
+                    Let's collaborate and achieve remarkable outcomes together!</p>
+
+            </div>
+            <button class="solid-btn" id="talk-btn">Let's Talk</button>
+        </div>
+
+    </section>
+
+    <section class="contact parallax" id="contact">
+        <div class="contact-block">
+            <label id="myLabel">Contact me</label>
+            <form id="myForm">
+                <div class="contact-field">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email Address">
+                </div>
+                <div class="contact-field">
+                    <input type="text" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <div class="contact-msg">
+                    <textarea placeholder="Enter your message..."></textarea>
+                </div>
+                <div class="contact-btn">
+                    <button class="solid-btn">Send Message</button>
+                </div>
+
+
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
